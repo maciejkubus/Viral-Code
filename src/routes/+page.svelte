@@ -3,7 +3,7 @@
 	import Carousel from '$lib/components/Carousel.svelte';
 	import Container from '$lib/components/Container.svelte';
 	import Counter from '$lib/components/Counter.svelte';
-	import Header from '$lib/components/Header.svelte';
+	import PageHeader from '$lib/components/PageHeader.svelte';
 	import ImageCards from '$lib/components/ImageCards.svelte';
 	import ImageText from '$lib/components/ImageText.svelte';
 	import Page from '$lib/components/Page.svelte';
@@ -13,7 +13,7 @@
 </script>
 
 <Page>
-	<Header>
+	<PageHeader>
 		<div class="flex flex-col gap-12 xl:w-2/3">
 			<h1
 				class="font-heading-token text-8xl xl:text-9xl font-extrablack text-secondary-500 -rotate-1"
@@ -31,7 +31,7 @@
 		<div class="w-1/3 hidden xl:flex">
 			<ImageCards images={['/pics/logo.png', '/pics/logo2.png']} href="#" />
 		</div>
-	</Header>
+	</PageHeader>
 	<Container
 		layout="flex flex-col xl:flex-row justify-center items-stretch gap-20 w-full"
 		bg="bg-tertiary-500"
