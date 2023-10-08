@@ -1,11 +1,13 @@
 <script lang="ts">
 	import Card from '$lib/components/Card.svelte';
+	import Carousel from '$lib/components/Carousel.svelte';
 	import Container from '$lib/components/Container.svelte';
 	import Counter from '$lib/components/Counter.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import ImageCards from '$lib/components/ImageCards.svelte';
 	import ImageText from '$lib/components/ImageText.svelte';
 	import Page from '$lib/components/Page.svelte';
+	import QouteSlide from '$lib/components/QouteSlide.svelte';
 </script>
 
 <Page>
@@ -121,5 +123,33 @@
 				</a>
 			{/each}
 		</div>
+	</Container>
+	<Container>
+		<svelte:fragment slot="title">
+			<span class="text-white"> There is loud about us </span>
+		</svelte:fragment>
+		<Carousel>
+			<QouteSlide>
+				<svelte:fragment slot="name">Maciej Kubus</svelte:fragment>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione repellendus. Dolorem,
+				voluptas. Delectus iure pariatur inventore vitae rem ullam. Debitis repudiandae, alias eos distinctio
+				neque odit quas veniam tempore!
+				<svelte:fragment slot="bottom">Owner - 2023</svelte:fragment>
+			</QouteSlide>
+			<QouteSlide>
+				<svelte:fragment slot="name">Albert Hofferman</svelte:fragment>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione repellendus. Dolorem,
+				voluptas. Delectus iure pariatur inventore vitae rem ullam. Debitis repudiandae, alias eos distinctio
+				neque odit quas veniam tempore!
+				<svelte:fragment slot="bottom">Researcher - 2023</svelte:fragment>
+			</QouteSlide>
+			<QouteSlide>
+				<svelte:fragment slot="name">John Doe</svelte:fragment>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione repellendus. Dolorem,
+				voluptas. Delectus iure pariatur inventore vitae rem ullam. Debitis repudiandae, alias eos distinctio
+				neque odit quas veniam tempore!
+				<svelte:fragment slot="bottom">Worker - 2023</svelte:fragment>
+			</QouteSlide>
+		</Carousel>
 	</Container>
 </Page>

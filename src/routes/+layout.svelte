@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../theme/app.postcss';
 	import { AppShell } from '@skeletonlabs/skeleton';
+	import '@splidejs/svelte-splide/css';
 
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
