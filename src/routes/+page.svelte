@@ -7,6 +7,7 @@
 	import ImageCards from '$lib/components/ImageCards.svelte';
 	import ImageText from '$lib/components/ImageText.svelte';
 	import Page from '$lib/components/Page.svelte';
+	import PostCard from '$lib/components/PostCard.svelte';
 	import QouteSlide from '$lib/components/QouteSlide.svelte';
 </script>
 
@@ -151,5 +152,53 @@
 				<svelte:fragment slot="bottom">Worker - 2023</svelte:fragment>
 			</QouteSlide>
 		</Carousel>
+	</Container>
+	<Container bg="bg-tertiary-500">
+		<svelte:fragment slot="title">Latest posts</svelte:fragment>
+		<PostCard href="/pics/amy/amy-1.jpg">
+			<img
+				src="/pics/amy/amy-1.jpg"
+				alt="Amy 1"
+				slot="image"
+				class="w-full h-full aspect-square object-cover object-center"
+			/>
+			<svelte:fragment slot="date">4 Jun</svelte:fragment>
+			<svelte:fragment slot="title">How to choose colors?</svelte:fragment>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, dolorum nulla quam
+				dolor ipsam ducimus. Mollitia molestiae voluptas vel labore?
+			</p>
+			<svelte:fragment slot="author">Maciej Kubus</svelte:fragment>
+		</PostCard>
+		<PostCard href="/pics/amy/amy-2.jpg">
+			<img
+				src="/pics/amy/amy-2.jpg"
+				alt="Amy 2"
+				slot="image"
+				class="w-full h-full aspect-square object-cover object-center"
+			/>
+			<svelte:fragment slot="date">14 Jun</svelte:fragment>
+			<svelte:fragment slot="title">Why you should use svelte?</svelte:fragment>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, dolorum nulla quam
+				dolor ipsam ducimus. Mollitia molestiae voluptas vel labore?
+			</p>
+			<svelte:fragment slot="author">Maciej Kubus</svelte:fragment>
+		</PostCard>
+		<PostCard href="/pics/amy/amy-3.jpg">
+			<img
+				src="/pics/amy/amy-3.jpg"
+				alt="Amy 3"
+				slot="image"
+				class="w-full h-full aspect-square object-cover object-center"
+			/>
+			<svelte:fragment slot="date">5 May</svelte:fragment>
+			<svelte:fragment slot="title">Abstract precisions is needed.</svelte:fragment>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, dolorum nulla quam
+				dolor ipsam ducimus. Mollitia molestiae voluptas vel labore?
+			</p>
+			<svelte:fragment slot="author">Maciej Kubus</svelte:fragment>
+		</PostCard>
 	</Container>
 </Page>
