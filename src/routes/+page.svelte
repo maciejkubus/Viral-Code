@@ -3,12 +3,13 @@
 	import Container from '$lib/components/Container.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import ImageCards from '$lib/components/ImageCards.svelte';
+	import ImageText from '$lib/components/ImageText.svelte';
 	import Page from '$lib/components/Page.svelte';
 </script>
 
 <Page>
 	<Header>
-		<div class="flex flex-col gap-12 w-2/3">
+		<div class="flex flex-col gap-12 xl:w-2/3">
 			<h1
 				class="font-heading-token text-8xl xl:text-9xl font-extrablack text-secondary-500 -rotate-1"
 			>
@@ -59,5 +60,32 @@
 				accusamus beatae sed tenetur. Inventore?
 			</svelte:fragment>
 		</Card>
+	</Container>
+	<Container>
+		<div class="xl:w-1/2 flex flex-col gap-8">
+			<h2 class="font-heading-token text-7xl">Why us?</h2>
+			<p class="text-lg">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam quae debitis
+				voluptatibus veniam? Eaque magnam minus porro ex sed id hic impedit sunt, quas ea qui totam
+				natus voluptates!
+			</p>
+			<ul class="text-lg list-disc pl-6 space-y-4">
+				<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+				<li>Lorem ipsum, dolor sit amet consectetur.</li>
+				<li>Lorem ipsum, dolor sit amet adipisicing elit.</li>
+				<li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+				<li>Lorem ipsum, dolor sit amet.</li>
+				<li>Lorem ipsum, consectetur adipisicing elit.</li>
+			</ul>
+		</div>
+		<div class="xl:w-1/2">
+			<ImageText text="7 years of experience">
+				<img
+					src="/pics/sex.jpg"
+					alt="sex"
+					class="group-hover:rotate-3 transition-all duration-500 ease-in-out"
+				/>
+			</ImageText>
+		</div>
 	</Container>
 </Page>
