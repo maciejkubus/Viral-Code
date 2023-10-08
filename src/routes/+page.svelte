@@ -7,6 +7,7 @@
 	import ImageCards from '$lib/components/ImageCards.svelte';
 	import ImageText from '$lib/components/ImageText.svelte';
 	import Page from '$lib/components/Page.svelte';
+	import Person from '$lib/components/Person.svelte';
 	import PostCard from '$lib/components/PostCard.svelte';
 	import QouteSlide from '$lib/components/QouteSlide.svelte';
 </script>
@@ -200,5 +201,43 @@
 			</p>
 			<svelte:fragment slot="author">Maciej Kubus</svelte:fragment>
 		</PostCard>
+	</Container>
+	<Container size="w-full" paddingX="px-0">
+		<svelte:fragment slot="title">
+			<span class="text-white">Our team</span>
+		</svelte:fragment>
+		<div class="xl:w-1/5">
+			<Person
+				image="/pics/characters/1.jpg"
+				href="http://maciejkubus.usermd.net/"
+				target="_blank"
+				accent="bg-primary-500"
+			>
+				<svelte:fragment slot="name">Aby Bibi</svelte:fragment>
+				<svelte:fragment slot="position">Priestess</svelte:fragment>
+			</Person>
+		</div>
+		<div class="xl:w-1/5">
+			<Person
+				image="/pics/characters/2.jpg"
+				href="http://maciejkubus.usermd.net/"
+				target="_blank"
+				accent="bg-secondary-500"
+			>
+				<svelte:fragment slot="name">Henry Great</svelte:fragment>
+				<svelte:fragment slot="position">Dark Mage</svelte:fragment>
+			</Person>
+		</div>
+		<div class="xl:w-1/5">
+			<Person
+				image="/pics/characters/4.jpg"
+				href="http://maciejkubus.usermd.net/"
+				target="_blank"
+				accent="bg-tertiary-500"
+			>
+				<svelte:fragment slot="name">Francois</svelte:fragment>
+				<svelte:fragment slot="position">Knight</svelte:fragment>
+			</Person>
+		</div>
 	</Container>
 </Page>
