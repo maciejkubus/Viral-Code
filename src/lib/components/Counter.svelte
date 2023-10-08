@@ -5,9 +5,12 @@
 	export let count = 0;
 
 	let counter = 0;
+	let started = false;
 	let interval: NodeJS.Timeout;
 
 	const start = () => {
+		if (started) return;
+		started = true;
 		interval = setInterval(() => {
 			counter++;
 			if (count <= counter) clearInterval(interval);
@@ -19,7 +22,7 @@
 	<h4 class="font-heading-token text-2xl">
 		<slot />
 	</h4>
-	<p class="text-8xl font-black h-32">
+	<p class="text-8xl font-black">
 		{counter}
 	</p>
 </div>
