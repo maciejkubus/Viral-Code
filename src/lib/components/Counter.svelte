@@ -19,7 +19,7 @@
 	<h4 class="font-heading-token text-2xl">
 		<slot />
 	</h4>
-	<p class="text-8xl font-black">
+	<p class="text-8xl font-black h-32">
 		{counter}
 	</p>
 </div>

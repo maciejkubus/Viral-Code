@@ -96,9 +96,15 @@
 		<Counter count={150}>Happy clients</Counter>
 		<Counter count={333}>Personal achievments</Counter>
 	</Container>
-	<Container paddingX="px-0" size="w-full" titlePadding="pb-32" paddingY="pt-32">
+	<Container
+		bg="variant-filled-tertiary"
+		paddingX="px-0"
+		size="w-full"
+		titlePadding="pb-32"
+		paddingY="py-0"
+	>
 		<svelte:fragment slot="title">
-			<div class="px-16 xl:px-2 text-white">They trusted us:</div>
+			<div class="px-16 xl:px-2">They trusted us:</div>
 		</svelte:fragment>
 		<div class="w-full flex flex-row flex-wrap">
 			{#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] as num}
