@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Card from '$lib/components/Card.svelte';
+	import Container from '$lib/components/Container.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import ImageCards from '$lib/components/ImageCards.svelte';
 	import Page from '$lib/components/Page.svelte';
@@ -24,4 +26,38 @@
 			<ImageCards images={['/pics/logo.png', '/pics/logo2.png']} href="#" />
 		</div>
 	</Header>
+	<Container
+		layout="flex flex-col xl:flex-row justify-center items-stretch gap-20 w-full"
+		bg="bg-tertiary-500"
+		paddingY="pb-32 pt-16"
+	>
+		<svelte:fragment slot="title">Who we are?</svelte:fragment>
+		<Card>
+			<svelte:fragment slot="subtitle">Website building</svelte:fragment>
+			<svelte:fragment slot="title">Team</svelte:fragment>
+			<svelte:fragment slot="content">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil cupiditate blanditiis
+				numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic recusandae
+				accusamus beatae sed tenetur. Inventore?
+			</svelte:fragment>
+		</Card>
+		<Card variant="variant-filled-secondary">
+			<svelte:fragment slot="subtitle">Best graphic</svelte:fragment>
+			<svelte:fragment slot="title">Projects</svelte:fragment>
+			<svelte:fragment slot="content">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil cupiditate blanditiis
+				numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic recusandae
+				accusamus beatae sed tenetur. Inventore?
+			</svelte:fragment>
+		</Card>
+		<Card variant="variant-filled-success">
+			<svelte:fragment slot="subtitle">Amazing programming</svelte:fragment>
+			<svelte:fragment slot="title">Skills</svelte:fragment>
+			<svelte:fragment slot="content">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil cupiditate blanditiis
+				numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic recusandae
+				accusamus beatae sed tenetur. Inventore?
+			</svelte:fragment>
+		</Card>
+	</Container>
 </Page>
