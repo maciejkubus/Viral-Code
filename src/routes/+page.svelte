@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Card from '$lib/components/Card.svelte';
 	import Container from '$lib/components/Container.svelte';
+	import Counter from '$lib/components/Counter.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import ImageCards from '$lib/components/ImageCards.svelte';
 	import ImageText from '$lib/components/ImageText.svelte';
@@ -87,5 +88,12 @@
 				/>
 			</ImageText>
 		</div>
+	</Container>
+	<Container bg="variant-filled-tertiary">
+		<svelte:fragment slot="title">We are strong together.</svelte:fragment>
+		<Counter count={200}>Made websites</Counter>
+		<Counter count={30}>Made shops</Counter>
+		<Counter count={150}>Happy clients</Counter>
+		<Counter count={333}>Personal achievments</Counter>
 	</Container>
 </Page>
