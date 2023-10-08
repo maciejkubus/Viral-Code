@@ -32,7 +32,7 @@
 		paddingY="pb-32 pt-16"
 	>
 		<svelte:fragment slot="title">Who we are?</svelte:fragment>
-		<Card>
+		<Card href="/about-us">
 			<svelte:fragment slot="subtitle">Website building</svelte:fragment>
 			<svelte:fragment slot="title">Team</svelte:fragment>
 			<svelte:fragment slot="content">
@@ -41,7 +41,7 @@
 				accusamus beatae sed tenetur. Inventore?
 			</svelte:fragment>
 		</Card>
-		<Card variant="variant-filled-secondary">
+		<Card variant="variant-filled-secondary" href="/about-us">
 			<svelte:fragment slot="subtitle">Best graphic</svelte:fragment>
 			<svelte:fragment slot="title">Projects</svelte:fragment>
 			<svelte:fragment slot="content">
@@ -50,7 +50,7 @@
 				accusamus beatae sed tenetur. Inventore?
 			</svelte:fragment>
 		</Card>
-		<Card variant="variant-filled-success">
+		<Card variant="variant-filled-success" href="/about-us">
 			<svelte:fragment slot="subtitle">Amazing programming</svelte:fragment>
 			<svelte:fragment slot="title">Skills</svelte:fragment>
 			<svelte:fragment slot="content">
