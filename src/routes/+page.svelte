@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/components/Header.svelte';
+	import ImageCards from '$lib/components/ImageCards.svelte';
 	import Page from '$lib/components/Page.svelte';
 </script>
 
@@ -14,7 +15,7 @@
 			</p>
 		</div>
 		<div class="w-1/3">
-			<img src="/pics/logo.png" alt="logo" class="border-4 border-secondary-500 rotate-6 rounded" />
+			<ImageCards images={['/pics/logo.png', '/pics/logo2.png']} href="#" />
 		</div>
 	</Header>
 </Page>
