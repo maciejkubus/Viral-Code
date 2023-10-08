@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../theme/app.postcss';
+	import { AppShell } from '@skeletonlabs/skeleton';
 
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
@@ -7,4 +8,8 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
-<slot />
+<AppShell>
+	<!-- <svelte:fragment slot="header">Header</svelte:fragment> -->
+	<slot />
+	<!-- <svelte:fragment slot="footer">Footer</svelte:fragment> -->
+</AppShell>
