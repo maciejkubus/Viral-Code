@@ -10,6 +10,9 @@
 	import Person from '$lib/components/Person.svelte';
 	import PostCard from '$lib/components/PostCard.svelte';
 	import QouteSlide from '$lib/components/QouteSlide.svelte';
+	import posts from '$lib/data/posts';
+
+	const latestPosts = posts.slice(0, 3);
 </script>
 
 <Page>
@@ -156,51 +159,22 @@
 	</Container>
 	<Container bg="bg-tertiary-500">
 		<svelte:fragment slot="title">Latest posts</svelte:fragment>
-		<PostCard href="/pics/amy/amy-1.jpg">
-			<img
-				src="/pics/amy/amy-1.jpg"
-				alt="Amy 1"
-				slot="image"
-				class="w-full h-full aspect-square object-cover object-center"
-			/>
-			<svelte:fragment slot="date">4 Jun</svelte:fragment>
-			<svelte:fragment slot="title">How to choose colors?</svelte:fragment>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, dolorum nulla quam
-				dolor ipsam ducimus. Mollitia molestiae voluptas vel labore?
-			</p>
-			<svelte:fragment slot="author">Maciej Kubus</svelte:fragment>
-		</PostCard>
-		<PostCard href="/pics/amy/amy-2.jpg">
-			<img
-				src="/pics/amy/amy-2.jpg"
-				alt="Amy 2"
-				slot="image"
-				class="w-full h-full aspect-square object-cover object-center"
-			/>
-			<svelte:fragment slot="date">14 Jun</svelte:fragment>
-			<svelte:fragment slot="title">Why you should use svelte?</svelte:fragment>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, dolorum nulla quam
-				dolor ipsam ducimus. Mollitia molestiae voluptas vel labore?
-			</p>
-			<svelte:fragment slot="author">Maciej Kubus</svelte:fragment>
-		</PostCard>
-		<PostCard href="/pics/amy/amy-3.jpg">
-			<img
-				src="/pics/amy/amy-3.jpg"
-				alt="Amy 3"
-				slot="image"
-				class="w-full h-full aspect-square object-cover object-center"
-			/>
-			<svelte:fragment slot="date">5 May</svelte:fragment>
-			<svelte:fragment slot="title">Abstract precisions is needed.</svelte:fragment>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, dolorum nulla quam
-				dolor ipsam ducimus. Mollitia molestiae voluptas vel labore?
-			</p>
-			<svelte:fragment slot="author">Maciej Kubus</svelte:fragment>
-		</PostCard>
+		{#each latestPosts as post}
+			<PostCard href="/blog/{post.slug}">
+				<img
+					src={post.image}
+					alt={post.title}
+					slot="image"
+					class="w-full h-full aspect-square object-cover object-center"
+				/>
+				<svelte:fragment slot="date">{post.date}</svelte:fragment>
+				<svelte:fragment slot="title">{post.title}</svelte:fragment>
+				<p>
+					{post.excerpt}
+				</p>
+				<svelte:fragment slot="author">{post.author}</svelte:fragment>
+			</PostCard>
+		{/each}
 	</Container>
 	<Container size="w-full" paddingX="px-0">
 		<svelte:fragment slot="title">
