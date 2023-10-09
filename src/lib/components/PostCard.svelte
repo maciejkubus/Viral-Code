@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<div class="w-full p-8 flex flex-col gap-4 variant-filled-secondary relative z-20">
-			<h3 class="text-3xl">
+			<h3 class="text-4xl">
 				<slot name="title" />
 			</h3>
 			<p>

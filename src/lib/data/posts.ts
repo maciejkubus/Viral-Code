@@ -21,10 +21,10 @@ const posts: IPost[] = [
   },
   {
     id:2,
-    slug: 'abstract-precisions-is-needed',
+    slug: 'abstract-precisions',
     image: '/pics/amy/amy-3.jpg',
     date: '5 Ma',
-    title: 'Abstract precisions is needed.',
+    title: 'Abstract precisions.',
     author: 'Maciej Kubus',
     excerpt: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit Explicabo, dolorum nulla quam dolor ipsam ducimus. Mollitia molestiae voluptas vel labore?'
   },
