@@ -215,4 +215,15 @@
 			</QouteSlide>
 		</Carousel>
 	</Container>
+	<Container bg="variant-filled-tertiary">
+		<div class="w-2/3 text-2xl">
+			<div>If you are interested</div>
+			<div class="text-4xl font-bold mt-4">Please contact us</div>
+		</div>
+		<div class="w-1/3 flex justify-end">
+			<a href="/contact" class="variant-filled-secondary btn btn-xl">
+				Contact <i class="fas fa-chevron-circle-right ml-4" />
+			</a>
+		</div>
+	</Container>
 </Page>
