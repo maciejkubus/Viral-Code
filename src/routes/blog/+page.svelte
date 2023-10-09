@@ -50,7 +50,7 @@
 			<img
 				src="/pics/logo.png"
 				alt="logo"
-				class="w-full aspect-square object-cover object-center border-8 border-secondary-500 rounded"
+				class="w-full aspect-square object-cover object-center border-8 border-secondary-500 rounded bg-white"
 			/>
 			<h3 class="font-heading-token text-4xl font-black">Viral Code</h3>
 			<p class="text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, enim!</p>
