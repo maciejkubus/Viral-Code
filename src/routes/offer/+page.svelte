@@ -3,6 +3,7 @@
 	import ImageCards from '$lib/components/ImageCards.svelte';
 	import Page from '$lib/components/Page.svelte';
 	import Container from '$lib/components/Container.svelte';
+	import IconText from '$lib/components/IconText.svelte';
 </script>
 
 <Page>
@@ -37,6 +38,44 @@
 			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quis vitae voluptas, optio
 			distinctio expedita ad nemo dignissimos, nisi consectetur beatae doloribus quibusdam enim
 			autem labore ducimus quasi et numquam illo id quas repellendus. Eius repudiandae ad tenetur.
+		</div>
+	</Container>
+	<Container>
+		<div class="w-1/3 flex flex-col gap-20">
+			<IconText>
+				<i class="fas fa-yin-yang" slot="icon" />
+				<svelte:fragment slot="title">Tranquility</svelte:fragment>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
+			</IconText>
+			<IconText>
+				<i class="fas fa-wine-glass-alt" slot="icon" />
+				<svelte:fragment slot="title">Wine bar</svelte:fragment>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
+			</IconText>
+		</div>
+		<div class="w-1/3 flex flex-col gap-20">
+			<IconText>
+				<i class="fas fa-wrench" slot="icon" />
+				<svelte:fragment slot="title">Quick tools</svelte:fragment>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
+			</IconText>
+			<IconText>
+				<i class="fas fa-walking" slot="icon" />
+				<svelte:fragment slot="title">Walks</svelte:fragment>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
+			</IconText>
+		</div>
+		<div class="w-1/3 flex flex-col gap-20">
+			<IconText>
+				<i class="fas fa-wallet" slot="icon" />
+				<svelte:fragment slot="title">Money</svelte:fragment>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
+			</IconText>
+			<IconText>
+				<i class="fas fa-venus" slot="icon" />
+				<svelte:fragment slot="title">Venus</svelte:fragment>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
+			</IconText>
 		</div>
 	</Container>
 </Page>
