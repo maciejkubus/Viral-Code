@@ -101,4 +101,42 @@
 			{/each}
 		</div>
 	</Container>
+	<Container>
+		<div class="w-1/3 flex flex-col gap-20">
+			<IconText>
+				<span slot="icon" class="font-bold">1.</span>
+				<svelte:fragment slot="title">Mercury</svelte:fragment>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
+			</IconText>
+			<IconText>
+				<span slot="icon" class="font-bold">2.</span>
+				<svelte:fragment slot="title">Venus</svelte:fragment>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
+			</IconText>
+		</div>
+		<div class="w-1/3 flex flex-col gap-20">
+			<IconText>
+				<span slot="icon" class="font-bold">3.</span>
+				<svelte:fragment slot="title">Earth</svelte:fragment>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
+			</IconText>
+			<IconText>
+				<span slot="icon" class="font-bold">4.</span>
+				<svelte:fragment slot="title">Mars</svelte:fragment>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
+			</IconText>
+		</div>
+		<div class="w-1/3 flex flex-col gap-20">
+			<IconText>
+				<span slot="icon" class="font-bold">5.</span>
+				<svelte:fragment slot="title">Jupiter</svelte:fragment>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
+			</IconText>
+			<IconText>
+				<span slot="icon" class="font-bold">6.</span>
+				<svelte:fragment slot="title">Saturn</svelte:fragment>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
+			</IconText>
+		</div>
+	</Container>
 </Page>
