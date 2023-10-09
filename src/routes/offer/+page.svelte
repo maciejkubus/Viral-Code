@@ -4,6 +4,8 @@
 	import Page from '$lib/components/Page.svelte';
 	import Container from '$lib/components/Container.svelte';
 	import IconText from '$lib/components/IconText.svelte';
+	import Carousel from '$lib/components/Carousel.svelte';
+	import QouteSlide from '$lib/components/QouteSlide.svelte';
 </script>
 
 <Page>
@@ -139,7 +141,7 @@
 			</IconText>
 		</div>
 	</Container>
-	<Container>
+	<Container bg="variant-filled-tertiary">
 		<div class="flex flex-col gap-8 xl:w-1/2">
 			<h3 class="font-heading-token text-6xl">Our elements together</h3>
 			<p class="text-2xl">
@@ -187,5 +189,30 @@
 				class="w-full aspect-square object-cover object-center"
 			/>
 		</div>
+	</Container>
+	<Container>
+		<Carousel>
+			<QouteSlide>
+				<svelte:fragment slot="name">Maciej Kubus</svelte:fragment>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione repellendus. Dolorem,
+				voluptas. Delectus iure pariatur inventore vitae rem ullam. Debitis repudiandae, alias eos distinctio
+				neque odit quas veniam tempore!
+				<svelte:fragment slot="bottom">Owner - 2023</svelte:fragment>
+			</QouteSlide>
+			<QouteSlide>
+				<svelte:fragment slot="name">Albert Hofferman</svelte:fragment>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione repellendus. Dolorem,
+				voluptas. Delectus iure pariatur inventore vitae rem ullam. Debitis repudiandae, alias eos distinctio
+				neque odit quas veniam tempore!
+				<svelte:fragment slot="bottom">Researcher - 2023</svelte:fragment>
+			</QouteSlide>
+			<QouteSlide>
+				<svelte:fragment slot="name">John Doe</svelte:fragment>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione repellendus. Dolorem,
+				voluptas. Delectus iure pariatur inventore vitae rem ullam. Debitis repudiandae, alias eos distinctio
+				neque odit quas veniam tempore!
+				<svelte:fragment slot="bottom">Worker - 2023</svelte:fragment>
+			</QouteSlide>
+		</Carousel>
 	</Container>
 </Page>
