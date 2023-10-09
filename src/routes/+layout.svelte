@@ -8,7 +8,11 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
+	import posts from '$lib/data/posts';
+
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	const latestPosts = posts.slice(0, 3);
 </script>
 
 <AppShell slotFooter="w-full">
@@ -103,9 +107,9 @@
 			</div>
 			<div slot="col-4" class="text-xl flex flex-col gap-2">
 				<h3 class="text-3xl font-heading-token font-bold pb-2">Posts</h3>
-				<a href="/">How to choose colors?</a>
-				<a href="/">Why you should use svelte?</a>
-				<a href="/">Abstract precisions is needed.</a>
+				{#each latestPosts as post}
+					<a href="/blog/{post.slug}">{post.title}</a>
+				{/each}
 			</div>
 
 			<div slot="bottom">Copyright (c) Maciej Kubus 2023</div>
