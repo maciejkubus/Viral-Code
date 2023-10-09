@@ -139,4 +139,53 @@
 			</IconText>
 		</div>
 	</Container>
+	<Container>
+		<div class="flex flex-col gap-8 xl:w-1/2">
+			<h3 class="font-heading-token text-6xl">Our elements together</h3>
+			<p class="text-2xl">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, ex! Recusandae perferendis
+				dolorem blanditiis laboriosam asperiores, quibusdam beatae odit ipsa.
+			</p>
+			<ul class="text-2xl space-y-2">
+				<li>
+					<span class="text-secondary-500"><i class="fas fa-check" /></span>
+					Fire elements
+				</li>
+				<li>
+					<span class="text-secondary-500"><i class="fas fa-check" /></span>
+					Air elements
+				</li>
+				<li>
+					<span class="text-secondary-500"><i class="fas fa-check" /></span>
+					Water elements
+				</li>
+				<li>
+					<span class="text-secondary-500"><i class="fas fa-check" /></span>
+					Earth elements
+				</li>
+			</ul>
+		</div>
+		<div class="w-1/2 hidden xl:grid grid-cols-2 gap-4">
+			<img
+				src="/pics/amy/amy-1.jpg"
+				alt="Amy 1"
+				class="w-full aspect-square object-cover object-center"
+			/>
+			<img
+				src="/pics/amy/amy-2.jpg"
+				alt="Amy 2"
+				class="w-full aspect-square object-cover object-center"
+			/>
+			<img
+				src="/pics/amy/amy-3.jpg"
+				alt="Amy 3"
+				class="w-full aspect-square object-cover object-center"
+			/>
+			<img
+				src="/pics/amy/amy-4.jpg"
+				alt="Amy 4"
+				class="w-full aspect-square object-cover object-center"
+			/>
+		</div>
+	</Container>
 </Page>
