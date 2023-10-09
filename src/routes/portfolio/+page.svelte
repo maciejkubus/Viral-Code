@@ -2,6 +2,9 @@
 	import PageHeader from '$lib/components/PageHeader.svelte';
 	import ImageCards from '$lib/components/ImageCards.svelte';
 	import Page from '$lib/components/Page.svelte';
+	import Container from '$lib/components/Container.svelte';
+	import portfolios from '$lib/data/portfolios';
+	import Card from '$lib/components/Card.svelte';
 </script>
 
 <Page>
@@ -20,4 +23,41 @@
 			<ImageCards images={['/pics/logo.png', '/pics/logo2.png']} href="#" />
 		</div>
 	</PageHeader>
+	<Container bg="bg-tertiary-500">
+		<div class="grid grid-cols-2 gap-20">
+			{#each portfolios as portfolio}
+				<div class="">
+					<Card href="/portfolio/{portfolio.slug}" variant="variant-filled-secondary">
+						<svelte:fragment slot="subtitle">Project</svelte:fragment>
+						<svelte:fragment slot="title">{portfolio.title}</svelte:fragment>
+						<svelte:fragment slot="content">
+							<div>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil cupiditate
+								blanditiis numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic
+								recusandae accusamus beatae sed tenetur. Inventore?
+							</div>
+							<div class="pt-8 text-2xl flex gap-4">
+								<a
+									href={portfolio.href}
+									on:click|stopPropagation={() => {}}
+									target="_blank"
+									class="block hover:text-primary-500 hover:scale-125 hover:-rotate-2 transition-all duration-200 ease-in-out"
+								>
+									<i class="fas fa-external-link-alt" />
+								</a>
+								<a
+									href={portfolio.github}
+									on:click|stopPropagation={() => {}}
+									target="_blank"
+									class="block hover:text-primary-500 hover:scale-125 hover:-rotate-2 transition-all duration-200 ease-in-out"
+								>
+									<i class="fab fa-github" />
+								</a>
+							</div>
+						</svelte:fragment>
+					</Card>
+				</div>
+			{/each}
+		</div>
+	</Container>
 </Page>
