@@ -7,8 +7,6 @@
 	import Person from '$lib/components/Person.svelte';
 	import PostCard from '$lib/components/PostCard.svelte';
 	import posts from '$lib/data/posts';
-	import Carousel from '$lib/components/Carousel.svelte';
-	import QouteSlide from '$lib/components/QouteSlide.svelte';
 
 	const latestPosts = posts.slice(0, 3);
 </script>
@@ -196,31 +194,6 @@
 				</IconText>
 			</div>
 		</div>
-	</Container>
-	<Container>
-		<Carousel>
-			<QouteSlide>
-				<svelte:fragment slot="name">Maciej Kubus</svelte:fragment>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione repellendus. Dolorem,
-				voluptas. Delectus iure pariatur inventore vitae rem ullam. Debitis repudiandae, alias eos distinctio
-				neque odit quas veniam tempore!
-				<svelte:fragment slot="bottom">Owner - 2023</svelte:fragment>
-			</QouteSlide>
-			<QouteSlide>
-				<svelte:fragment slot="name">Albert Hofferman</svelte:fragment>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione repellendus. Dolorem,
-				voluptas. Delectus iure pariatur inventore vitae rem ullam. Debitis repudiandae, alias eos distinctio
-				neque odit quas veniam tempore!
-				<svelte:fragment slot="bottom">Researcher - 2023</svelte:fragment>
-			</QouteSlide>
-			<QouteSlide>
-				<svelte:fragment slot="name">John Doe</svelte:fragment>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione repellendus. Dolorem,
-				voluptas. Delectus iure pariatur inventore vitae rem ullam. Debitis repudiandae, alias eos distinctio
-				neque odit quas veniam tempore!
-				<svelte:fragment slot="bottom">Worker - 2023</svelte:fragment>
-			</QouteSlide>
-		</Carousel>
 	</Container>
 	<Container bg="bg-tertiary-500">
 		<svelte:fragment slot="title">Latest posts</svelte:fragment>

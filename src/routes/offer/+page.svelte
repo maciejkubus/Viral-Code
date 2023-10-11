@@ -4,8 +4,6 @@
 	import Page from '$lib/components/Page.svelte';
 	import Container from '$lib/components/Container.svelte';
 	import IconText from '$lib/components/IconText.svelte';
-	import Carousel from '$lib/components/Carousel.svelte';
-	import QouteSlide from '$lib/components/QouteSlide.svelte';
 </script>
 
 <Page>
@@ -185,31 +183,6 @@
 				class="w-full aspect-square object-cover object-center"
 			/>
 		</div>
-	</Container>
-	<Container>
-		<Carousel>
-			<QouteSlide>
-				<svelte:fragment slot="name">Maciej Kubus</svelte:fragment>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione repellendus. Dolorem,
-				voluptas. Delectus iure pariatur inventore vitae rem ullam. Debitis repudiandae, alias eos distinctio
-				neque odit quas veniam tempore!
-				<svelte:fragment slot="bottom">Owner - 2023</svelte:fragment>
-			</QouteSlide>
-			<QouteSlide>
-				<svelte:fragment slot="name">Albert Hofferman</svelte:fragment>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione repellendus. Dolorem,
-				voluptas. Delectus iure pariatur inventore vitae rem ullam. Debitis repudiandae, alias eos distinctio
-				neque odit quas veniam tempore!
-				<svelte:fragment slot="bottom">Researcher - 2023</svelte:fragment>
-			</QouteSlide>
-			<QouteSlide>
-				<svelte:fragment slot="name">John Doe</svelte:fragment>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione repellendus. Dolorem,
-				voluptas. Delectus iure pariatur inventore vitae rem ullam. Debitis repudiandae, alias eos distinctio
-				neque odit quas veniam tempore!
-				<svelte:fragment slot="bottom">Worker - 2023</svelte:fragment>
-			</QouteSlide>
-		</Carousel>
 	</Container>
 	<Container bg="variant-filled-tertiary">
 		<div class="w-2/3 text-2xl">
