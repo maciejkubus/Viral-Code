@@ -41,6 +41,7 @@
   "dependencies": {
     "@floating-ui/dom": "1.5.3",
     "@splidejs/svelte-splide": "^0.2.9",
-    "nodemailer": "^6.9.6"
+    "nodemailer": "^6.9.6",
+    "svelte-inview": "^4.0.1"
   }
 }

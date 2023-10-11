@@ -10,6 +10,7 @@
 	import PostCard from '$lib/components/PostCard.svelte';
 	import posts from '$lib/data/posts';
 	import Link from '$lib/components/Link.svelte';
+	import Animation from '$lib/components/Animation.svelte';
 
 	const latestPosts = posts.slice(0, 3);
 </script>
@@ -117,18 +118,25 @@
 			<div class="px-16 xl:px-2">They trusted us:</div>
 		</svelte:fragment>
 		<div class="w-full flex flex-row flex-wrap">
-			{#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] as num}
-				<Link
-					href="/pics/amy/amy-{num}.jpg"
-					target="_blank"
-					container="w-1/2 xl:w-1/4 aspect-square flex overflow-hidden group"
+			{#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] as num, index}
+				<Animation
+					container="w-1/2 xl:w-1/4"
+					from="translate-y-16 opacity-0"
+					to="translate-y-0 opacity-100"
+					delay={(index % 4) * 100}
 				>
-					<img
-						src="/pics/amy/amy-{num}.jpg"
-						alt="partner {num}"
-						class="w-full h-full object-cover group-hover:scale-110 group-hover:-rotate-6 transition-all duration-200 ease-in-out"
-					/>
-				</Link>
+					<Link
+						href="/pics/amy/amy-{num}.jpg"
+						target="_blank"
+						container=" aspect-square flex overflow-hidden group"
+					>
+						<img
+							src="/pics/amy/amy-{num}.jpg"
+							alt="partner {num}"
+							class="w-full h-full object-cover group-hover:scale-110 group-hover:-rotate-6 transition-all duration-200 ease-in-out"
+						/>
+					</Link>
+				</Animation>
 			{/each}
 		</div>
 	</Container>

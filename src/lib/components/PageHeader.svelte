@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let paddingY = 'py-32';
 	export let paddingX = 'px-16 xl:px-2';
-  export let height = 'min-h-screen';
+	export let height = 'min-h-screen';
 </script>
 
 <header class="w-full {height} flex justify-center items-center {paddingY} {paddingX}">
