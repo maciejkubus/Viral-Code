@@ -7,6 +7,7 @@
 	import Person from '$lib/components/Person.svelte';
 	import PostCard from '$lib/components/PostCard.svelte';
 	import posts from '$lib/data/posts';
+	import Link from '$lib/components/Link.svelte';
 
 	const latestPosts = posts.slice(0, 3);
 </script>
@@ -94,17 +95,17 @@
 	>
 		<div class="w-full flex flex-row flex-wrap">
 			{#each [1, 2, 3, 4] as num}
-				<a
+				<Link
 					href="/pics/amy/amy-{num}.jpg"
 					target="_blank"
-					class="w-1/2 xl:w-1/4 aspect-square flex overflow-hidden group"
+					container="w-1/2 xl:w-1/4 aspect-square flex overflow-hidden group"
 				>
 					<img
 						src="/pics/amy/amy-{num}.jpg"
 						alt="partner {num}"
 						class="w-full h-full object-cover group-hover:scale-110 group-hover:-rotate-6 transition-all duration-200 ease-in-out"
 					/>
-				</a>
+				</Link>
 			{/each}
 		</div>
 	</Container>

@@ -9,6 +9,7 @@
 	import Person from '$lib/components/Person.svelte';
 	import PostCard from '$lib/components/PostCard.svelte';
 	import posts from '$lib/data/posts';
+	import Link from '$lib/components/Link.svelte';
 
 	const latestPosts = posts.slice(0, 3);
 </script>
@@ -25,8 +26,12 @@
 				Best website building team.
 			</p>
 			<div class="flex gap-4 xl:gap-10 flex-col xl:flex-row">
-				<a href="/about-us" class="btn variant-filled-primary btn-lg xl:btn-xl">Get to know us</a>
-				<a href="/contact" class="btn variant-filled-secondary btn-lg xl:btn-xl">Contact us</a>
+				<Link href="/about-us" container="btn variant-filled-primary btn-lg xl:btn-xl"
+					>Get to know us</Link
+				>
+				<Link href="/contact" container="btn variant-filled-secondary btn-lg xl:btn-xl"
+					>Contact us</Link
+				>
 			</div>
 		</div>
 		<div class="w-1/3 hidden xl:flex">
@@ -113,17 +118,17 @@
 		</svelte:fragment>
 		<div class="w-full flex flex-row flex-wrap">
 			{#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] as num}
-				<a
+				<Link
 					href="/pics/amy/amy-{num}.jpg"
 					target="_blank"
-					class="w-1/2 xl:w-1/4 aspect-square flex overflow-hidden group"
+					container="w-1/2 xl:w-1/4 aspect-square flex overflow-hidden group"
 				>
 					<img
 						src="/pics/amy/amy-{num}.jpg"
 						alt="partner {num}"
 						class="w-full h-full object-cover group-hover:scale-110 group-hover:-rotate-6 transition-all duration-200 ease-in-out"
 					/>
-				</a>
+				</Link>
 			{/each}
 		</div>
 	</Container>

@@ -6,6 +6,7 @@
 	import Card from '$lib/components/Card.svelte';
 	import posts from '$lib/data/posts';
 	import PostCard from '$lib/components/PostCard.svelte';
+	import Link from '$lib/components/Link.svelte';
 </script>
 
 <Page>
@@ -56,21 +57,21 @@
 			<p class="text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, enim!</p>
 			<h3 class="font-heading-token text-3xl font-bold">Categories</h3>
 			<ul class="text-2xl space-y-1">
-				<li><a href="/blog" class="hover:text-primary-500">Education</a></li>
-				<li><a href="/blog" class="hover:text-primary-500">Entartaiment</a></li>
-				<li><a href="/blog" class="hover:text-primary-500">Fun</a></li>
-				<li><a href="/blog" class="hover:text-primary-500">Galaxies</a></li>
-				<li><a href="/blog" class="hover:text-primary-500">Video</a></li>
+				<li><Link href="/blog" container="hover:text-primary-500">Education</Link></li>
+				<li><Link href="/blog" container="hover:text-primary-500">Entartaiment</Link></li>
+				<li><Link href="/blog" container="hover:text-primary-500">Fun</Link></li>
+				<li><Link href="/blog" container="hover:text-primary-500">Galaxies</Link></li>
+				<li><Link href="/blog" container="hover:text-primary-500">Video</Link></li>
 			</ul>
 			<h3 class="font-heading-token text-3xl font-bold">Tags</h3>
 			<div class="flex flex-wrap gap-4">
 				{#each [{ name: 'Red', color: ' variant-filled-primary' }, { name: 'Blue', color: ' variant-filled-secondary' }, { name: 'Black', color: ' variant-filled-surface' }, { name: 'Green', color: ' variant-filled-success' }, { name: 'Error', color: ' variant-filled-error' }] as tag}
-					<a
-						class="text-2xl px-4 py-2 {tag.color} rounded hover:scale-110 hover:-rotate-2 transition-all duration-200 ease-in-out"
+					<Link
+						container="text-2xl px-4 py-2 {tag.color} rounded hover:scale-110 hover:-rotate-2 transition-all duration-200 ease-in-out"
 						href="/blog"
 					>
 						{tag.name}
-					</a>
+					</Link>
 				{/each}
 			</div>
 		</div>

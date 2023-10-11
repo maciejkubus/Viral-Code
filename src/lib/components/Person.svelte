@@ -1,11 +1,13 @@
 <script lang="ts">
+	import Link from './Link.svelte';
+
 	export let image = '';
 	export let href = '';
 	export let target = '_self';
 	export let accent = 'bg-tertiary-500';
 </script>
 
-<a class="w-full aspect-[3/5] relative group flex" {href} {target}>
+<Link container="w-full aspect-[3/5] relative group flex" {href} {target}>
 	<div
 		class="absolute -right-4 -bottom-4 left-4 top-4 z-10 rounded {accent} group-hover:-right-8 group-hover:-bottom-8 group-hover:left-8 group-hover:top-8 transition-all duration-200 ease-in-out"
 	/>
@@ -23,4 +25,4 @@
 			<slot name="position" />
 		</div>
 	</div>
-</a>
+</Link>

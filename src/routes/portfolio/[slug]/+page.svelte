@@ -3,6 +3,7 @@
 	import ImageCards from '$lib/components/ImageCards.svelte';
 	import Page from '$lib/components/Page.svelte';
 	import type { IPortfolioItem } from '$lib/interfacess/portfolio-item.interface';
+	import Link from '$lib/components/Link.svelte';
 
 	export let data;
 </script>
@@ -16,28 +17,28 @@
 				{data.portfolio.title}
 			</h1>
 			<div class="font-heading-token text-6xl xl:text-8xl font-black text-tertiary-500 flex gap-12">
-				<a
+				<Link
 					href={data.portfolio.href}
-					on:click|stopPropagation={() => {}}
+					stopPropagation={true}
 					target="_blank"
-					class="block hover:text-primary-500 hover:scale-125 hover:-rotate-2 transition-all duration-200 ease-in-out"
+					container="block hover:text-primary-500 hover:scale-125 hover:-rotate-2 transition-all duration-200 ease-in-out"
 				>
 					<i class="fas fa-external-link-alt" />
-				</a>
-				<a
+				</Link>
+				<Link
 					href={data.portfolio.github}
-					on:click|stopPropagation={() => {}}
+					stopPropagation={true}
 					target="_blank"
-					class="block hover:text-primary-500 hover:scale-125 hover:-rotate-2 transition-all duration-200 ease-in-out"
+					container="block hover:text-primary-500 hover:scale-125 hover:-rotate-2 transition-all duration-200 ease-in-out"
 				>
 					<i class="fab fa-github" />
-				</a>
+				</Link>
 			</div>
 			<div class="flex gap-4 xl:gap-10 flex-col xl:flex-row">
-				<a href="/" class="btn variant-filled-primary btn-lg xl:btn-xl">Return to home</a>
-				<a href="/portfolio" class="btn variant-filled-secondary btn-lg xl:btn-xl">
+				<Link href="/" container="btn variant-filled-primary btn-lg xl:btn-xl">Return to home</Link>
+				<Link href="/portfolio" container="btn variant-filled-secondary btn-lg xl:btn-xl">
 					Return to porfolios
-				</a>
+				</Link>
 			</div>
 		</div>
 		<div class="w-1/3 hidden xl:flex">

@@ -4,6 +4,7 @@
 	import Page from '$lib/components/Page.svelte';
 	import Container from '$lib/components/Container.svelte';
 	import ContactForm from '$lib/components/ContactForm.svelte';
+	import Link from '$lib/components/Link.svelte';
 </script>
 
 <Page>
@@ -30,21 +31,24 @@
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas magni sequi beatae,
 				voluptatibus nostrum! Quidem consectetur quo delectus quod.
 			</p>
-			<a href="tel:+48570277237" class="flex gap-4 items-center hover:text-primary-500">
+			<Link href="tel:+48570277237" container="flex gap-4 items-center hover:text-primary-500">
 				<i class="fas fa-phone-alt" />
 				<div>+48 570 277 237</div>
-			</a>
-			<a href="mailto:maciekkubus@gmail.com" class="flex gap-4 items-center hover:text-primary-500">
+			</Link>
+			<Link
+				href="mailto:maciekkubus@gmail.com"
+				container="flex gap-4 items-center hover:text-primary-500"
+			>
 				<i class="fas fa-envelope" />
 				<div>maciekkubus@gmail.com</div>
-			</a>
-			<a
+			</Link>
+			<Link
 				href="https://maps.app.goo.gl/7J9CBX6zMiTXj9Ug9"
-				class="flex gap-4 items-center hover:text-primary-500"
+				container="flex gap-4 items-center hover:text-primary-500"
 			>
 				<i class="fas fa-map-marker-alt" />
 				<div>Janówka, Mokra 21</div>
-			</a>
+			</Link>
 		</div>
 		<div class="w-full xl:w-1/2">
 			<ContactForm />

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import InputControl from './InputControl.svelte';
+	import Link from './Link.svelte';
 
 	let email = '';
 	let message = '';
@@ -48,7 +49,7 @@
 			<input type="checkbox" required bind:value={rodo} name="rodo" id="rodo" disabled={sent} />
 			<label for="rodo">
 				I accept
-				<a href="/privacy-policy" class="hover:text-primary-500">privacy policy</a>.
+				<Link href="/privacy-policy" container="hover:text-primary-500">privacy policy</Link>.
 			</label>
 		</div>
 		<div class="flex justify-end items-center h-16">

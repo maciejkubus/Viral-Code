@@ -1,8 +1,10 @@
 <script lang="ts">
+	import Link from './Link.svelte';
+
 	export let href = '';
 </script>
 
-<a class="group relative" {href}>
+<Link container="group relative" {href}>
 	<div
 		class="absolute -right-4 -bottom-4 left-4 top-4 z-10 bg-surface-500 rounded group-hover:-right-8 group-hover:-bottom-8 group-hover:left-8 group-hover:top-8 transition-all duration-200 ease-in-out"
 	/>
@@ -27,4 +29,4 @@
 			</p>
 		</div>
 	</div>
-</a>
+</Link>

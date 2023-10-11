@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { IMenuItem } from '$lib/interfacess/menu-item.interface';
+	import Link from './Link.svelte';
 
 	export let menuItems: IMenuItem[] = [];
 
@@ -41,13 +42,13 @@
 		</div>
 		<div class="flex gap-8 xl:gap-4 text-4xl xl:text-xl flex-col xl:flex-row text-center">
 			{#each menuItems as menuItem}
-				<a
+				<Link
 					href={menuItem.href}
 					target={menuItem.target ? menuItem.target : '_self'}
 					on:click={hide}
 				>
 					{menuItem.title}
-				</a>
+				</Link>
 			{/each}
 		</div>
 		<div>

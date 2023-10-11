@@ -9,6 +9,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import posts from '$lib/data/posts';
+	import Link from '$lib/components/Link.svelte';
 
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
@@ -27,31 +28,31 @@
 				{ href: '/contact', title: 'Contact' }
 			]}
 		>
-			<a href="/" slot="title">
+			<Link href="/" slot="title">
 				<h1 class="font-heading-token text-4xl font-extrablack">Viral Code</h1>
-			</a>
+			</Link>
 			<div class="flex gap-4 text-xl" slot="socials">
-				<a
+				<Link
 					href="https://www.facebook.com/maciek.kubus.7/"
 					target="_blank"
-					class="hover:scale-110 hover:-rotate-2"
+					container="hover:scale-110 hover:-rotate-2"
 				>
 					<i class="fab fa-facebook-square" />
-				</a>
-				<a
+				</Link>
+				<Link
 					href="https://www.instagram.com/maciekkubus/"
 					target="_blank"
-					class="hover:scale-110 hover:-rotate-2"
+					container="hover:scale-110 hover:-rotate-2"
 				>
 					<i class="fab fa-instagram" />
-				</a>
-				<a
+				</Link>
+				<Link
 					href="https://github.com/maciejkubus/"
 					target="_blank"
-					class="hover:scale-110 hover:-rotate-2"
+					container="hover:scale-110 hover:-rotate-2"
 				>
 					<i class="fab fa-github" />
-				</a>
+				</Link>
 			</div>
 		</Header>
 	</svelte:fragment>
@@ -64,27 +65,27 @@
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, minus?
 				</p>
 				<div class="flex gap-4 text-xl">
-					<a
+					<Link
 						href="https://www.facebook.com/maciek.kubus.7/"
 						target="_blank"
-						class="hover:scale-110 hover:-rotate-2"
+						container="hover:scale-110 hover:-rotate-2"
 					>
 						<i class="fab fa-facebook-square" />
-					</a>
-					<a
+					</Link>
+					<Link
 						href="https://www.instagram.com/maciekkubus/"
 						target="_blank"
-						class="hover:scale-110 hover:-rotate-2"
+						container="hover:scale-110 hover:-rotate-2"
 					>
 						<i class="fab fa-instagram" />
-					</a>
-					<a
+					</Link>
+					<Link
 						href="https://github.com/maciejkubus/"
 						target="_blank"
-						class="hover:scale-110 hover:-rotate-2"
+						container="hover:scale-110 hover:-rotate-2"
 					>
 						<i class="fab fa-github" />
-					</a>
+					</Link>
 				</div>
 			</div>
 			<div slot="col-2" class="text-xl flex flex-col gap-2">
@@ -100,15 +101,15 @@
 			</div>
 			<div slot="col-3" class="text-xl flex flex-col gap-2">
 				<h3 class="text-3xl font-heading-token font-bold pb-2">Links</h3>
-				<a href="/contact">Kontakt</a>
-				<a href="/offer">Oferta</a>
-				<a href="/portfolio">Portfolio</a>
-				<a href="/privacy-policy">Privacy Policy</a>
+				<Link href="/contact">Kontakt</Link>
+				<Link href="/offer">Oferta</Link>
+				<Link href="/portfolio">Portfolio</Link>
+				<Link href="/privacy-policy">Privacy Policy</Link>
 			</div>
 			<div slot="col-4" class="text-xl flex flex-col gap-2">
 				<h3 class="text-3xl font-heading-token font-bold pb-2">Posts</h3>
 				{#each latestPosts as post}
-					<a href="/blog/{post.slug}">{post.title}</a>
+					<Link href="/blog/{post.slug}">{post.title}</Link>
 				{/each}
 			</div>
 

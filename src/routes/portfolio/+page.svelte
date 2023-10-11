@@ -5,6 +5,7 @@
 	import Container from '$lib/components/Container.svelte';
 	import portfolios from '$lib/data/portfolios';
 	import Card from '$lib/components/Card.svelte';
+	import Link from '$lib/components/Link.svelte';
 </script>
 
 <Page>
@@ -37,22 +38,22 @@
 								recusandae accusamus beatae sed tenetur. Inventore?
 							</div>
 							<div class="pt-8 text-2xl flex gap-4">
-								<a
+								<Link
 									href={portfolio.href}
-									on:click|stopPropagation={() => {}}
+									stopPropagation={true}
 									target="_blank"
-									class="block hover:text-primary-500 hover:scale-125 hover:-rotate-2 transition-all duration-200 ease-in-out"
+									container="block hover:text-primary-500 hover:scale-125 hover:-rotate-2 transition-all duration-200 ease-in-out"
 								>
 									<i class="fas fa-external-link-alt" />
-								</a>
-								<a
+								</Link>
+								<Link
 									href={portfolio.github}
-									on:click|stopPropagation={() => {}}
+									stopPropagation={true}
 									target="_blank"
-									class="block hover:text-primary-500 hover:scale-125 hover:-rotate-2 transition-all duration-200 ease-in-out"
+									container="block hover:text-primary-500 hover:scale-125 hover:-rotate-2 transition-all duration-200 ease-in-out"
 								>
 									<i class="fab fa-github" />
-								</a>
+								</Link>
 							</div>
 						</svelte:fragment>
 					</Card>

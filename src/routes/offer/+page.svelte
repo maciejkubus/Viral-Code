@@ -4,6 +4,7 @@
 	import Page from '$lib/components/Page.svelte';
 	import Container from '$lib/components/Container.svelte';
 	import IconText from '$lib/components/IconText.svelte';
+	import Link from '$lib/components/Link.svelte';
 </script>
 
 <Page>
@@ -83,17 +84,17 @@
 	>
 		<div class="w-full flex flex-row flex-wrap">
 			{#each [1, 2, 3, 4] as num}
-				<a
+				<Link
 					href="/pics/amy/amy-{num}.jpg"
 					target="_blank"
-					class="w-1/2 xl:w-1/4 aspect-square flex overflow-hidden group"
+					container="w-1/2 xl:w-1/4 aspect-square flex overflow-hidden group"
 				>
 					<img
 						src="/pics/amy/amy-{num}.jpg"
 						alt="partner {num}"
 						class="w-full h-full object-cover group-hover:scale-110 group-hover:-rotate-6 transition-all duration-200 ease-in-out"
 					/>
-				</a>
+				</Link>
 			{/each}
 		</div>
 	</Container>
@@ -190,9 +191,9 @@
 			<div class="text-4xl font-bold mt-4">Please contact us</div>
 		</div>
 		<div class="w-full xl:w-1/3 flex justify-end">
-			<a href="/contact" class="variant-filled-secondary btn btn-xl w-full xl:w-auto">
+			<Link href="/contact" container="variant-filled-secondary btn btn-xl w-full xl:w-auto">
 				Contact <i class="fas fa-chevron-circle-right ml-4" />
-			</a>
+			</Link>
 		</div>
 	</Container>
 </Page>

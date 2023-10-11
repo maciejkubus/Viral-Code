@@ -3,6 +3,7 @@
 	import ImageCards from '$lib/components/ImageCards.svelte';
 	import Page from '$lib/components/Page.svelte';
 	import type { IPortfolioItem } from '$lib/interfacess/portfolio-item.interface';
+	import Link from '$lib/components/Link.svelte';
 
 	export let data;
 </script>
@@ -20,8 +21,10 @@
 				{data.post.excerpt}
 			</div>
 			<div class="flex gap-4 xl:gap-10 flex-col xl:flex-row">
-				<a href="/" class="btn variant-filled-primary btn-lg xl:btn-xl">Return to home</a>
-				<a href="/blog" class="btn variant-filled-secondary btn-lg xl:btn-xl"> Return to blog </a>
+				<Link href="/" container="btn variant-filled-primary btn-lg xl:btn-xl">Return to home</Link>
+				<Link href="/blog" container="btn variant-filled-secondary btn-lg xl:btn-xl">
+					Return to blog
+				</Link>
 			</div>
 		</div>
 		<div class="w-1/3 hidden xl:flex">
