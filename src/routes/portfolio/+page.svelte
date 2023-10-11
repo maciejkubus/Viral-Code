@@ -24,7 +24,7 @@
 		</div>
 	</PageHeader>
 	<Container bg="bg-tertiary-500">
-		<div class="grid grid-cols-2 gap-20">
+		<div class="grid grid-cols-1 xl:grid-cols-2 gap-20">
 			{#each portfolios as portfolio}
 				<div class="">
 					<Card href="/portfolio/{portfolio.slug}" variant="variant-filled-secondary">

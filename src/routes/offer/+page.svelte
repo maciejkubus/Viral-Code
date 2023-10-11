@@ -24,20 +24,20 @@
 	</PageHeader>
 	<Container bg="bg-tertiary-500" layout="flex flex-col xl:flex-row justify-center gap-20 w-full">
 		<svelte:fragment slot="title">How we work</svelte:fragment>
-		<div class="w-1/2 text-black">
+		<div class="w-full xl:w-1/2 text-black text-lg">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quidem, explicabo consequuntur ea
 			mollitia maiores asperiores reiciendis repellendus a magnam, maxime suscipit saepe nostrum
 			nemo! Illo, sit corporis? Voluptatibus, sit. Eligendi cum cumque nostrum aut quibusdam
 			corporis? Obcaecati, excepturi corporis!
 		</div>
-		<div class="w-1/2 text-black">
+		<div class="w-full xl:w-1/2 text-black text-lg">
 			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quis vitae voluptas, optio
 			distinctio expedita ad nemo dignissimos, nisi consectetur beatae doloribus quibusdam enim
 			autem labore ducimus quasi et numquam illo id quas repellendus. Eius repudiandae ad tenetur.
 		</div>
 	</Container>
 	<Container>
-		<div class="w-1/3 flex flex-col gap-20">
+		<div class="w-full xl:w-1/3 flex flex-col gap-20">
 			<IconText>
 				<i class="fas fa-yin-yang" slot="icon" />
 				<svelte:fragment slot="title">Tranquility</svelte:fragment>
@@ -49,7 +49,7 @@
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
 			</IconText>
 		</div>
-		<div class="w-1/3 flex flex-col gap-20">
+		<div class="w-full xl:w-1/3 flex flex-col gap-20">
 			<IconText>
 				<i class="fas fa-wrench" slot="icon" />
 				<svelte:fragment slot="title">Quick tools</svelte:fragment>
@@ -61,7 +61,7 @@
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
 			</IconText>
 		</div>
-		<div class="w-1/3 flex flex-col gap-20">
+		<div class="w-full xl:w-1/3 flex flex-col gap-20">
 			<IconText>
 				<i class="fas fa-wallet" slot="icon" />
 				<svelte:fragment slot="title">Money</svelte:fragment>
@@ -98,7 +98,7 @@
 		</div>
 	</Container>
 	<Container>
-		<div class="w-1/3 flex flex-col gap-20">
+		<div class="w-full xl:w-1/3 flex flex-col gap-20">
 			<IconText>
 				<span slot="icon" class="font-bold">1.</span>
 				<svelte:fragment slot="title">Mercury</svelte:fragment>
@@ -110,7 +110,7 @@
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
 			</IconText>
 		</div>
-		<div class="w-1/3 flex flex-col gap-20">
+		<div class="w-full xl:w-1/3 flex flex-col gap-20">
 			<IconText>
 				<span slot="icon" class="font-bold">3.</span>
 				<svelte:fragment slot="title">Earth</svelte:fragment>
@@ -122,7 +122,7 @@
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit facere inventore amet?</p>
 			</IconText>
 		</div>
-		<div class="w-1/3 flex flex-col gap-20">
+		<div class="w-full xl:w-1/3 flex flex-col gap-20">
 			<IconText>
 				<span slot="icon" class="font-bold">5.</span>
 				<svelte:fragment slot="title">Jupiter</svelte:fragment>
@@ -136,7 +136,7 @@
 		</div>
 	</Container>
 	<Container bg="variant-filled-tertiary">
-		<div class="flex flex-col gap-8 xl:w-1/2">
+		<div class="flex flex-col gap-8 w-full xl:w-1/2">
 			<h3 class="font-heading-token text-6xl">Our elements together</h3>
 			<p class="text-2xl">
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, ex! Recusandae perferendis
@@ -161,7 +161,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="w-1/2 hidden xl:grid grid-cols-2 gap-4">
+		<div class="w-full xl:w-1/2 hidden xl:grid grid-cols-2 gap-4">
 			<img
 				src="/pics/amy/amy-1.jpg"
 				alt="Amy 1"
@@ -185,12 +185,12 @@
 		</div>
 	</Container>
 	<Container bg="variant-filled-tertiary">
-		<div class="w-2/3 text-2xl">
+		<div class="w-full xl:w-2/3 text-2xl">
 			<div>If you are interested</div>
 			<div class="text-4xl font-bold mt-4">Please contact us</div>
 		</div>
-		<div class="w-1/3 flex justify-end">
-			<a href="/contact" class="variant-filled-secondary btn btn-xl">
+		<div class="w-full xl:w-1/3 flex justify-end">
+			<a href="/contact" class="variant-filled-secondary btn btn-xl w-full xl:w-auto">
 				Contact <i class="fas fa-chevron-circle-right ml-4" />
 			</a>
 		</div>

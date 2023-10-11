@@ -28,7 +28,7 @@
 		bg="bg-tertiary-500"
 		layout="flex flex-col-reverse xl:flex-row justify-center gap-20 w-full"
 	>
-		<div class="xl:w-full grid grid-cols-2 gap-20">
+		<div class="xl:w-full grid grid-cols-1 xl:grid-cols-2 gap-20">
 			{#each posts as post}
 				<PostCard href="/blog/{post.slug}">
 					<img

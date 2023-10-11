@@ -24,7 +24,7 @@
 		layout="flex flex-col xl:flex-row justify-center gap-20 w-full"
 		bg="variant-filled-tertiary"
 	>
-		<div class="w-1/2 flex flex-col gap-8 text-xl">
+		<div class="w-full xl:w-1/2 flex flex-col gap-8 text-xl">
 			<h3 class="font-heading-token text-6xl">Connect with us</h3>
 			<p class="">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas magni sequi beatae,
@@ -46,7 +46,7 @@
 				<div>Janówka, Mokra 21</div>
 			</a>
 		</div>
-		<div class="w-1/2">
+		<div class="w-full xl:w-1/2">
 			<ContactForm />
 		</div>
 	</Container>

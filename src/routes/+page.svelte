@@ -151,11 +151,11 @@
 			</PostCard>
 		{/each}
 	</Container>
-	<Container size="w-full" paddingX="px-0">
+	<Container size="w-full">
 		<svelte:fragment slot="title">
 			<span class="text-white">Our team</span>
 		</svelte:fragment>
-		<div class="xl:w-1/5">
+		<div class="w-full xl:w-1/5">
 			<Person
 				image="/pics/characters/1.jpg"
 				href="http://maciejkubus.usermd.net/"
@@ -166,7 +166,7 @@
 				<svelte:fragment slot="position">Priestess</svelte:fragment>
 			</Person>
 		</div>
-		<div class="xl:w-1/5">
+		<div class="w-full xl:w-1/5">
 			<Person
 				image="/pics/characters/2.jpg"
 				href="http://maciejkubus.usermd.net/"
@@ -177,7 +177,7 @@
 				<svelte:fragment slot="position">Dark Mage</svelte:fragment>
 			</Person>
 		</div>
-		<div class="xl:w-1/5">
+		<div class="w-full xl:w-1/5">
 			<Person
 				image="/pics/characters/4.jpg"
 				href="http://maciejkubus.usermd.net/"

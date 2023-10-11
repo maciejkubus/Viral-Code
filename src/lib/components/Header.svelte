@@ -16,7 +16,7 @@
 
 {#if !open}
 	<button
-		class="flex xl:hidden justify-center items-center fixed z-50 right-8 top-8 text-3xl p-4 variant-filled-secondary w-16 h-16 rounded text-center"
+		class="flex xl:hidden justify-center items-center fixed z-50 right-8 top-8 text-3xl p-4 variant-filled-secondary w-16 h-16 rounded text-center shadow-xl"
 		on:click={show}
 	>
 		<i class="fas fa-bars" />

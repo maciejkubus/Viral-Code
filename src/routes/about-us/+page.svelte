@@ -108,11 +108,11 @@
 			{/each}
 		</div>
 	</Container>
-	<Container size="w-full" paddingX="px-0">
+	<Container size="w-full">
 		<svelte:fragment slot="title">
 			<span class="text-white">Our team</span>
 		</svelte:fragment>
-		<div class="xl:w-1/5">
+		<div class="w-full xl:w-1/5">
 			<Person
 				image="/pics/characters/1.jpg"
 				href="http://maciejkubus.usermd.net/"
@@ -123,7 +123,7 @@
 				<svelte:fragment slot="position">Priestess</svelte:fragment>
 			</Person>
 		</div>
-		<div class="xl:w-1/5">
+		<div class="w-full xl:w-1/5">
 			<Person
 				image="/pics/characters/2.jpg"
 				href="http://maciejkubus.usermd.net/"
@@ -134,7 +134,7 @@
 				<svelte:fragment slot="position">Dark Mage</svelte:fragment>
 			</Person>
 		</div>
-		<div class="xl:w-1/5">
+		<div class="w-full xl:w-1/5">
 			<Person
 				image="/pics/characters/4.jpg"
 				href="http://maciejkubus.usermd.net/"
@@ -147,7 +147,7 @@
 		</div>
 	</Container>
 	<Container bg="variant-filled-tertiary">
-		<div class="w-1/2 hidden xl:grid grid-cols-2 gap-4">
+		<div class="w-full xl:w-1/2 hidden xl:grid grid-cols-2 gap-4">
 			<img
 				src="/pics/amy/amy-1.jpg"
 				alt="Amy 1"
@@ -169,9 +169,9 @@
 				class="w-full aspect-square object-cover object-center"
 			/>
 		</div>
-		<div class="w-1/2">
+		<div class="w-full xl:w-1/2">
 			<h3 class="font-heading-token text-6xl mb-12">Our powers</h3>
-			<div class="w-full grid grid-cols-2 gap-12">
+			<div class="w-full grid grid-cols-1 xl:grid-cols-2 gap-12">
 				<IconText>
 					<i class="fas fa-yin-yang" slot="icon" />
 					<svelte:fragment slot="title">Tranquility</svelte:fragment>
