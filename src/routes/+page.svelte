@@ -12,6 +12,7 @@
 	import Link from '$lib/components/Link.svelte';
 	import Animation from '$lib/components/Animation.svelte';
 	import TextAnimation from '$lib/components/TextAnimation.svelte';
+	import Quote from '$lib/components/Quote.svelte';
 
 	const latestPosts = posts.slice(0, 3);
 </script>
@@ -265,6 +266,13 @@
 		<svelte:fragment slot="title">
 			<span class="text-white"> There is loud about us </span>
 		</svelte:fragment>
+		<Quote>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ullam facilis voluptates
+			possimus repellendus rerum vitae molestias ducimus natus. Beatae minus quibusdam quidem veniam
+			eaque aspernatur temporibus cum fuga unde.
+			<svelte:fragment slot="author">Maciej Kubus</svelte:fragment>
+			<svelte:fragment slot="year">2023</svelte:fragment>
+		</Quote>
 	</Container>
 	<Container bg="bg-tertiary-500">
 		<svelte:fragment slot="title">
