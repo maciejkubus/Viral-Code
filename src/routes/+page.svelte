@@ -95,8 +95,8 @@
 					blanditiis numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic
 					recusandae accusamus beatae sed tenetur. Inventore?
 				</svelte:fragment>
-			</Card></Animation
-		>
+			</Card>
+		</Animation>
 		<Animation
 			from="translate-y-16 opacity-0 -rotate-12"
 			to="translate-y-0 opacity-100 rotate-0"
@@ -111,8 +111,8 @@
 					blanditiis numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic
 					recusandae accusamus beatae sed tenetur. Inventore?
 				</svelte:fragment>
-			</Card></Animation
-		>
+			</Card>
+		</Animation>
 		<Animation
 			from="translate-y-16 opacity-0 -rotate-12"
 			to="translate-y-0 opacity-100 rotate-0"
@@ -127,42 +127,109 @@
 					blanditiis numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic
 					recusandae accusamus beatae sed tenetur. Inventore?
 				</svelte:fragment>
-			</Card></Animation
-		>
+			</Card>
+		</Animation>
 	</Container>
 	<Container>
 		<div class="xl:w-1/2 flex flex-col gap-8">
-			<h2 class="font-heading-token text-7xl">Why us?</h2>
+			<h2 class="font-heading-token text-7xl">
+				<Animation
+					from="translate-y-16 opacity-0 -rotate-3"
+					to="translate-y-0 opacity-100 rotate-0"
+					duration="duration-500"
+					delay={200}
+				>
+					Why us?
+				</Animation>
+			</h2>
 			<p class="text-lg">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam quae debitis
-				voluptatibus veniam? Eaque magnam minus porro ex sed id hic impedit sunt, quas ea qui totam
-				natus voluptates!
+				<Animation
+					from="translate-y-16 opacity-0 -rotate-3"
+					to="translate-y-0 opacity-100 rotate-0"
+					duration="duration-500"
+					delay={400}
+				>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam quae debitis
+					voluptatibus veniam? Eaque magnam minus porro ex sed id hic impedit sunt, quas ea qui
+					totam natus voluptates!
+				</Animation>
 			</p>
-			<ul class="text-lg list-disc pl-6 space-y-4">
-				<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-				<li>Lorem ipsum, dolor sit amet consectetur.</li>
-				<li>Lorem ipsum, dolor sit amet adipisicing elit.</li>
-				<li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-				<li>Lorem ipsum, dolor sit amet.</li>
-				<li>Lorem ipsum, consectetur adipisicing elit.</li>
-			</ul>
+			<Animation
+				from="translate-y-16 opacity-0 -rotate-3"
+				to="translate-y-0 opacity-100 rotate-0"
+				duration="duration-500"
+				delay={600}
+			>
+				<ul class="text-lg list-disc pl-6 space-y-4">
+					<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+					<li>Lorem ipsum, dolor sit amet consectetur.</li>
+					<li>Lorem ipsum, dolor sit amet adipisicing elit.</li>
+					<li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+					<li>Lorem ipsum, dolor sit amet.</li>
+					<li>Lorem ipsum, consectetur adipisicing elit.</li>
+				</ul>
+			</Animation>
 		</div>
 		<div class="xl:w-1/2">
-			<ImageText text="7 years of experience">
-				<img
-					src="/pics/sex.jpg"
-					alt="sex"
-					class="group-hover:rotate-3 transition-all duration-500 ease-in-out"
-				/>
-			</ImageText>
+			<Animation
+				from="translate-y-16 scale-0 opacity-0 -rotate-12"
+				to="translate-y-0 scale-100 opacity-100 rotate-0"
+				duration="duration-500"
+				delay={1000}
+			>
+				<ImageText text="7 years of experience" animationDelay={1200}>
+					<img
+						src="/pics/sex.jpg"
+						alt="sex"
+						class="group-hover:rotate-3 transition-all duration-500 ease-in-out"
+					/>
+				</ImageText>
+			</Animation>
 		</div>
 	</Container>
 	<Container bg="variant-filled-tertiary">
-		<svelte:fragment slot="title">We are strong together.</svelte:fragment>
-		<Counter count={200}>Made websites</Counter>
-		<Counter count={30}>Made shops</Counter>
-		<Counter count={150}>Happy clients</Counter>
-		<Counter count={333}>Personal achievments</Counter>
+		<svelte:fragment slot="title">
+			<Animation
+				from="translate-y-16 scale-0 opacity-0 -rotate-12"
+				to="translate-y-0 scale-100 opacity-100 rotate-0"
+				duration="duration-500"
+				delay={200}
+			>
+				We are strong together.
+			</Animation>
+		</svelte:fragment>
+		<Animation
+			from="translate-y-16 scale-0 opacity-0 -rotate-12"
+			to="translate-y-0 scale-100 opacity-100 rotate-0"
+			duration="duration-500"
+			delay={200}
+		>
+			<Counter count={200}>Made websites</Counter>
+		</Animation>
+		<Animation
+			from="translate-y-16 scale-0 opacity-0 -rotate-12"
+			to="translate-y-0 scale-100 opacity-100 rotate-0"
+			duration="duration-500"
+			delay={400}
+		>
+			<Counter count={30}>Made shops</Counter>
+		</Animation>
+		<Animation
+			from="translate-y-16 scale-0 opacity-0 -rotate-12"
+			to="translate-y-0 scale-100 opacity-100 rotate-0"
+			duration="duration-500"
+			delay={600}
+		>
+			<Counter count={150}>Happy clients</Counter>
+		</Animation>
+		<Animation
+			from="translate-y-16 scale-0 opacity-0 -rotate-12"
+			to="translate-y-0 scale-100 opacity-100 rotate-0"
+			duration="duration-500"
+			delay={800}
+		>
+			<Counter count={333}>Personal achievments</Counter>
+		</Animation>
 	</Container>
 	<Container
 		bg="variant-filled-tertiary"
@@ -171,9 +238,6 @@
 		titlePadding="pb-32"
 		paddingY="py-0"
 	>
-		<svelte:fragment slot="title">
-			<div class="px-16 xl:px-2">They trusted us:</div>
-		</svelte:fragment>
 		<div class="w-full flex flex-row flex-wrap">
 			{#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] as num, index}
 				<Animation
@@ -203,22 +267,38 @@
 		</svelte:fragment>
 	</Container>
 	<Container bg="bg-tertiary-500">
-		<svelte:fragment slot="title">Latest posts</svelte:fragment>
-		{#each latestPosts as post}
-			<PostCard href="/blog/{post.slug}">
-				<img
-					src={post.image}
-					alt={post.title}
-					slot="image"
-					class="w-full h-full aspect-square object-cover object-center"
-				/>
-				<svelte:fragment slot="date">{post.date}</svelte:fragment>
-				<svelte:fragment slot="title">{post.title}</svelte:fragment>
-				<p>
-					{post.excerpt}
-				</p>
-				<svelte:fragment slot="author">{post.author}</svelte:fragment>
-			</PostCard>
+		<svelte:fragment slot="title">
+			<Animation
+				from="translate-y-16 scale-0 opacity-0"
+				to="translate-y-0 scale-100 opacity-100"
+				duration="duration-500"
+				delay={200}
+			>
+				Latest posts
+			</Animation>
+		</svelte:fragment>
+		{#each latestPosts as post, index}
+			<Animation
+				from="translate-y-16 scale-0 opacity-0 -rotate-6"
+				to="translate-y-0 scale-100 opacity-100 rotate-0"
+				duration="duration-500"
+				delay={300 * index}
+			>
+				<PostCard href="/blog/{post.slug}">
+					<img
+						src={post.image}
+						alt={post.title}
+						slot="image"
+						class="w-full h-full aspect-square object-cover object-center"
+					/>
+					<svelte:fragment slot="date">{post.date}</svelte:fragment>
+					<svelte:fragment slot="title">{post.title}</svelte:fragment>
+					<p>
+						{post.excerpt}
+					</p>
+					<svelte:fragment slot="author">{post.author}</svelte:fragment>
+				</PostCard>
+			</Animation>
 		{/each}
 	</Container>
 	<Container size="w-full">
