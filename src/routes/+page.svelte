@@ -11,6 +11,7 @@
 	import posts from '$lib/data/posts';
 	import Link from '$lib/components/Link.svelte';
 	import Animation from '$lib/components/Animation.svelte';
+	import TextAnimation from '$lib/components/TextAnimation.svelte';
 
 	const latestPosts = posts.slice(0, 3);
 </script>
@@ -21,7 +22,7 @@
 			<h1
 				class="font-heading-token text-8xl xl:text-9xl font-extrablack text-secondary-500 -rotate-1"
 			>
-				Viral Code
+				<TextAnimation text="Viral Code" />
 			</h1>
 			<p class="font-heading-token text-6xl xl:text-8xl font-black text-tertiary-500">
 				Best website building team.
