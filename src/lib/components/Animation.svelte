@@ -3,7 +3,7 @@
 	import { inview } from 'svelte-inview';
 
 	export let unobserveOnEnter = false;
-	export let rootMargin = '-10%';
+	export let rootMargin = '-0%';
 	export let container = '';
 	export let from = '';
 	export let to = '';

@@ -264,15 +264,19 @@
 	</Container>
 	<Container>
 		<svelte:fragment slot="title">
-			<span class="text-white"> There is loud about us </span>
+			<Animation from="translate-y-16 opacity-0" to="translate-y-0 opacity-100" delay={300}>
+				<span class="text-white"> There is loud about us </span>
+			</Animation>
 		</svelte:fragment>
-		<Quote>
-			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ullam facilis voluptates
-			possimus repellendus rerum vitae molestias ducimus natus. Beatae minus quibusdam quidem veniam
-			eaque aspernatur temporibus cum fuga unde.
-			<svelte:fragment slot="author">Maciej Kubus</svelte:fragment>
-			<svelte:fragment slot="year">2023</svelte:fragment>
-		</Quote>
+		<Animation from="translate-y-16 opacity-0" to="translate-y-0 opacity-100" delay={600}>
+			<Quote>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ullam facilis voluptates
+				possimus repellendus rerum vitae molestias ducimus natus. Beatae minus quibusdam quidem
+				veniam eaque aspernatur temporibus cum fuga unde.
+				<svelte:fragment slot="author">Maciej Kubus</svelte:fragment>
+				<svelte:fragment slot="year">2023</svelte:fragment>
+			</Quote>
+		</Animation>
 	</Container>
 	<Container bg="bg-tertiary-500">
 		<svelte:fragment slot="title">
@@ -311,40 +315,68 @@
 	</Container>
 	<Container size="w-full">
 		<svelte:fragment slot="title">
-			<span class="text-white">Our team</span>
+			<Animation
+				from="translate-y-16 scale-0 opacity-0"
+				to="translate-y-0 scale-100 opacity-100"
+				duration="duration-500"
+				delay={200}
+			>
+				<span class="text-white">Our team</span>
+			</Animation>
 		</svelte:fragment>
 		<div class="w-full xl:w-1/5">
-			<Person
-				image="/pics/characters/1.jpg"
-				href="http://maciejkubus.usermd.net/"
-				target="_blank"
-				accent="bg-primary-500"
+			<Animation
+				from="translate-y-16 scale-0 opacity-0 -rotate-6"
+				to="translate-y-0 scale-100 opacity-100 rotate-0"
+				duration="duration-500"
+				delay={400}
 			>
-				<svelte:fragment slot="name">Aby Bibi</svelte:fragment>
-				<svelte:fragment slot="position">Priestess</svelte:fragment>
-			</Person>
+				<Person
+					image="/pics/characters/1.jpg"
+					href="http://maciejkubus.usermd.net/"
+					target="_blank"
+					accent="bg-primary-500"
+				>
+					<svelte:fragment slot="name">Aby Bibi</svelte:fragment>
+					<svelte:fragment slot="position">Priestess</svelte:fragment>
+				</Person>
+			</Animation>
 		</div>
 		<div class="w-full xl:w-1/5">
-			<Person
-				image="/pics/characters/2.jpg"
-				href="http://maciejkubus.usermd.net/"
-				target="_blank"
-				accent="bg-secondary-500"
+			<Animation
+				from="translate-y-16 scale-0 opacity-0 -rotate-6"
+				to="translate-y-0 scale-100 opacity-100 rotate-0"
+				duration="duration-500"
+				delay={600}
 			>
-				<svelte:fragment slot="name">Henry Great</svelte:fragment>
-				<svelte:fragment slot="position">Dark Mage</svelte:fragment>
-			</Person>
+				<Person
+					image="/pics/characters/2.jpg"
+					href="http://maciejkubus.usermd.net/"
+					target="_blank"
+					accent="bg-secondary-500"
+				>
+					<svelte:fragment slot="name">Henry Great</svelte:fragment>
+					<svelte:fragment slot="position">Dark Mage</svelte:fragment>
+				</Person>
+			</Animation>
 		</div>
 		<div class="w-full xl:w-1/5">
-			<Person
-				image="/pics/characters/4.jpg"
-				href="http://maciejkubus.usermd.net/"
-				target="_blank"
-				accent="bg-tertiary-500"
+			<Animation
+				from="translate-y-16 scale-0 opacity-0 -rotate-6"
+				to="translate-y-0 scale-100 opacity-100 rotate-0"
+				duration="duration-500"
+				delay={800}
 			>
-				<svelte:fragment slot="name">Francois</svelte:fragment>
-				<svelte:fragment slot="position">Knight</svelte:fragment>
-			</Person>
+				<Person
+					image="/pics/characters/4.jpg"
+					href="http://maciejkubus.usermd.net/"
+					target="_blank"
+					accent="bg-tertiary-500"
+				>
+					<svelte:fragment slot="name">Francois</svelte:fragment>
+					<svelte:fragment slot="position">Knight</svelte:fragment>
+				</Person>
+			</Animation>
 		</div>
 	</Container>
 </Page>
