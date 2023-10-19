@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { inview } from 'svelte-inview';
 
 	export let unobserveOnEnter = false;
@@ -10,15 +11,23 @@
 	export let transition = 'transition-all';
 	export let duration = 'duration-400';
 	export let timing = 'ease-in-out';
+	export let inView = true;
 
-	let isInView = false;
+	let start = false;
+
+	onMount(() => {
+		if (!inView)
+			setTimeout(() => {
+				start = true;
+			}, delay);
+	});
 </script>
 
 <div
-	class="{container} {isInView ? to : from} {transition} {duration} {timing}"
+	class="{container} {start ? to : from} {transition} {duration} {timing}"
 	use:inview={{ unobserveOnEnter, rootMargin }}
 	on:inview_change={(event) => {
-		setTimeout(() => (isInView = event.detail.inView), delay);
+		if (inView) setTimeout(() => (start = event.detail.inView), delay);
 	}}
 >
 	<slot />

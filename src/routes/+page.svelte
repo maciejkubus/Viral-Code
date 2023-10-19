@@ -24,20 +24,51 @@
 			>
 				<TextAnimation text="Viral Code" />
 			</h1>
-			<p class="font-heading-token text-6xl xl:text-8xl font-black text-tertiary-500">
-				Best website building team.
-			</p>
+			<Animation
+				container="w-full"
+				from="translate-y-16 opacity-0"
+				to="translate-y-0 opacity-100"
+				inView={false}
+				delay={3000}
+			>
+				<p class="font-heading-token text-6xl xl:text-8xl font-black text-tertiary-500">
+					Best website building team.
+				</p>
+			</Animation>
 			<div class="flex gap-4 xl:gap-10 flex-col xl:flex-row">
-				<Link href="/about-us" container="btn variant-filled-primary btn-lg xl:btn-xl"
-					>Get to know us</Link
+				<Animation
+					from="translate-y-16 opacity-0"
+					to="translate-y-0 opacity-100"
+					delay={3400}
+					inView={false}
 				>
-				<Link href="/contact" container="btn variant-filled-secondary btn-lg xl:btn-xl"
-					>Contact us</Link
+					<Link href="/about-us" container="btn variant-filled-primary btn-lg xl:btn-xl">
+						Get to know us
+					</Link>
+				</Animation>
+				<Animation
+					from="translate-y-16 opacity-0"
+					to="translate-y-0 opacity-100"
+					delay={3600}
+					inView={false}
 				>
+					<Link href="/contact" container="btn variant-filled-secondary btn-lg xl:btn-xl">
+						Contact us
+					</Link>
+				</Animation>
 			</div>
 		</div>
 		<div class="w-1/3 hidden xl:flex">
-			<ImageCards images={['/pics/logo.png', '/pics/logo2.png']} href="#" />
+			<Animation
+				container="w-full"
+				from="scale-0"
+				to="scale-100"
+				duration="duration-500"
+				delay={4000}
+				inView={false}
+			>
+				<ImageCards images={['/pics/logo.png', '/pics/logo2.png']} href="#" />
+			</Animation>
 		</div>
 	</PageHeader>
 	<Container
@@ -45,34 +76,59 @@
 		bg="bg-tertiary-500"
 		paddingY="pb-32 pt-16"
 	>
-		<svelte:fragment slot="title">Who we are?</svelte:fragment>
-		<Card href="/about-us">
-			<svelte:fragment slot="subtitle">Website building</svelte:fragment>
-			<svelte:fragment slot="title">Team</svelte:fragment>
-			<svelte:fragment slot="content">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil cupiditate blanditiis
-				numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic recusandae
-				accusamus beatae sed tenetur. Inventore?
-			</svelte:fragment>
-		</Card>
-		<Card variant="variant-filled-secondary" href="/about-us">
-			<svelte:fragment slot="subtitle">Best graphic</svelte:fragment>
-			<svelte:fragment slot="title">Projects</svelte:fragment>
-			<svelte:fragment slot="content">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil cupiditate blanditiis
-				numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic recusandae
-				accusamus beatae sed tenetur. Inventore?
-			</svelte:fragment>
-		</Card>
-		<Card variant="variant-filled-success" href="/about-us">
-			<svelte:fragment slot="subtitle">Amazing programming</svelte:fragment>
-			<svelte:fragment slot="title">Skills</svelte:fragment>
-			<svelte:fragment slot="content">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil cupiditate blanditiis
-				numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic recusandae
-				accusamus beatae sed tenetur. Inventore?
-			</svelte:fragment>
-		</Card>
+		<svelte:fragment slot="title">
+			<Animation from="translate-y-16 opacity-0" to="translate-y-0 opacity-100" delay={100}>
+				Who we are?
+			</Animation>
+		</svelte:fragment>
+		<Animation
+			from="translate-y-16 opacity-0 -rotate-12"
+			to="translate-y-0 opacity-100 rotate-0"
+			duration="duration-500"
+			delay={300}
+		>
+			<Card href="/about-us">
+				<svelte:fragment slot="subtitle">Website building</svelte:fragment>
+				<svelte:fragment slot="title">Team</svelte:fragment>
+				<svelte:fragment slot="content">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil cupiditate
+					blanditiis numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic
+					recusandae accusamus beatae sed tenetur. Inventore?
+				</svelte:fragment>
+			</Card></Animation
+		>
+		<Animation
+			from="translate-y-16 opacity-0 -rotate-12"
+			to="translate-y-0 opacity-100 rotate-0"
+			duration="duration-500"
+			delay={600}
+		>
+			<Card variant="variant-filled-secondary" href="/about-us">
+				<svelte:fragment slot="subtitle">Best graphic</svelte:fragment>
+				<svelte:fragment slot="title">Projects</svelte:fragment>
+				<svelte:fragment slot="content">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil cupiditate
+					blanditiis numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic
+					recusandae accusamus beatae sed tenetur. Inventore?
+				</svelte:fragment>
+			</Card></Animation
+		>
+		<Animation
+			from="translate-y-16 opacity-0 -rotate-12"
+			to="translate-y-0 opacity-100 rotate-0"
+			duration="duration-500"
+			delay={900}
+		>
+			<Card variant="variant-filled-success" href="/about-us">
+				<svelte:fragment slot="subtitle">Amazing programming</svelte:fragment>
+				<svelte:fragment slot="title">Skills</svelte:fragment>
+				<svelte:fragment slot="content">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nihil cupiditate
+					blanditiis numquam temporibus quo vero veniam minima odit totam sunt magni nam, hic
+					recusandae accusamus beatae sed tenetur. Inventore?
+				</svelte:fragment>
+			</Card></Animation
+		>
 	</Container>
 	<Container>
 		<div class="xl:w-1/2 flex flex-col gap-8">

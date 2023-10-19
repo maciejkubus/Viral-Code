@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	export let text = '';
-	let index = 0;
+	let index = 1;
 	let showIndicator = true;
 	let textInterval: ReturnType<typeof setInterval>;
 	let indicatorInterval: ReturnType<typeof setInterval>;
@@ -16,7 +16,7 @@
 				clearInterval(indicatorInterval);
 				showIndicator = false;
 			}
-		}, 400);
+		}, 300);
 
 		indicatorInterval = setInterval(() => {
 			showIndicator = !showIndicator;
@@ -24,5 +24,4 @@
 	});
 </script>
 
-{text.slice(0, index)}
-{#if showIndicator}_{/if}
+{text.slice(0, index)}{showIndicator ? '_' : ''}
