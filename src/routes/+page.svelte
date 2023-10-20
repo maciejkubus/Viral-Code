@@ -23,14 +23,23 @@
 			<h1
 				class="font-heading-token text-8xl xl:text-9xl font-extrablack text-secondary-500 -rotate-1"
 			>
-				<TextAnimation text="Viral Code" />
+				<Animation
+					container="w-full"
+					from="translate-y-16 xl:translate-x-32 xl:scale-150"
+					to="translate-y-0 translate-x-0 scale-100"
+					inView={false}
+					duration="duration-500"
+					delay={3000}
+				>
+					<TextAnimation text="Viral Code" />
+				</Animation>
 			</h1>
 			<Animation
 				container="w-full"
 				from="translate-y-16 opacity-0"
 				to="translate-y-0 opacity-100"
 				inView={false}
-				delay={3000}
+				delay={3400}
 			>
 				<p class="font-heading-token text-6xl xl:text-8xl font-black text-tertiary-500">
 					Best website building team.
@@ -40,7 +49,7 @@
 				<Animation
 					from="translate-y-16 opacity-0"
 					to="translate-y-0 opacity-100"
-					delay={3400}
+					delay={3800}
 					inView={false}
 				>
 					<Link href="/about-us" container="btn variant-filled-primary btn-lg xl:btn-xl">
@@ -50,7 +59,7 @@
 				<Animation
 					from="translate-y-16 opacity-0"
 					to="translate-y-0 opacity-100"
-					delay={3600}
+					delay={4000}
 					inView={false}
 				>
 					<Link href="/contact" container="btn variant-filled-secondary btn-lg xl:btn-xl">
@@ -65,7 +74,7 @@
 				from="scale-0"
 				to="scale-100"
 				duration="duration-500"
-				delay={4000}
+				delay={4400}
 				inView={false}
 			>
 				<ImageCards images={['/pics/logo.png', '/pics/logo2.png']} href="#" />
