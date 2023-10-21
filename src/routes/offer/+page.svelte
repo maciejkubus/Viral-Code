@@ -5,6 +5,7 @@
 	import Container from '$lib/components/Container.svelte';
 	import IconText from '$lib/components/IconText.svelte';
 	import Link from '$lib/components/Link.svelte';
+	import Quote from '$lib/components/Quote.svelte';
 </script>
 
 <Page>
@@ -184,6 +185,18 @@
 				class="w-full aspect-square object-cover object-center"
 			/>
 		</div>
+	</Container>
+	<Container>
+		<svelte:fragment slot="title">
+			<span class="text-white"> There is loud about us </span>
+		</svelte:fragment>
+		<Quote>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod ullam facilis voluptates
+			possimus repellendus rerum vitae molestias ducimus natus. Beatae minus quibusdam quidem veniam
+			eaque aspernatur temporibus cum fuga unde.
+			<svelte:fragment slot="author">Maciej Kubus</svelte:fragment>
+			<svelte:fragment slot="year">2023</svelte:fragment>
+		</Quote>
 	</Container>
 	<Container bg="variant-filled-tertiary">
 		<div class="w-full xl:w-2/3 text-2xl">
